@@ -1,0 +1,840 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #e7e7e7;
+}
+
+
+/* Navbar */
+
+.nav-container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    background: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    z-index: 100;
+    padding: 20px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+
+/* Footer */
+
+.footer-container {
+    margin-top: 9vh;
+    padding: 0;
+    text-align: center;
+    background: black;
+    color: rgb(141, 141, 141);
+    padding: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.footer-content i {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.footer-content img {
+    filter: invert(100%);
+}
+
+.dev-social-media a {
+    color: white;
+}
+
+
+/* Index.html */
+
+.index {
+    width: 100%;
+    height: 100vh;
+}
+
+.index-container {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apresentation {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+}
+
+.apresentation h2 {
+    text-transform: uppercase;
+    color: #333;
+    margin: 0;
+    padding: 14px;
+    font-size: 40px;
+}
+
+.apresentation p {
+    text-align: justify;
+    padding: 14px;
+    color: rgb(141, 141, 141);
+    letter-spacing: 2px;
+}
+
+.logo {
+    position: absolute;
+    top: 8%;
+    padding: 14px;
+    left: 5%;
+}
+
+.some-food {
+    height: 100vh;
+    width: 50%;
+    float: right;
+    background-image: url("../img/bg_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.status-food {
+    width: 100%;
+    display: inline-flex;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-food-1 {
+    text-align: center;
+}
+
+.status-food-1 h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: rgb(141, 141, 141);
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.status-food-1:hover h3 {
+    color: #333;
+}
+
+.index-container button {
+    position: relative;
+    background: rgb(243, 45, 45);
+    outline: 0;
+    border: 2px solid rgb(243, 45, 45);
+    text-align: center;
+    width: 200px;
+    color: white;
+    padding: 14px;
+    top: 5vh;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.index-container button:hover {
+    background: none;
+    border: 2px solid rgb(243, 45, 45);
+    color: rgb(243, 45, 45);
+}
+
+
+/* About-Us */
+
+.about-us {
+    width: 100%;
+    height: 100vh;
+}
+
+.about-us-content {
+    height: 100vh;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kitchen-photo {
+    height: 100vh;
+    width: 40%;
+    float: left;
+    left: 15%;
+    background-image: url("../img/about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-us-content-text {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-20%, 0%);
+    text-align: justify;
+    padding: 14px;
+}
+
+.about-us-content-text h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.about-us-content-text p {
+    color: rgb(141, 141, 141);
+    letter-spacing: 2px;
+}
+
+.about-us-content-text span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.special-recipe {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+
+.special-recipe h3 {
+    margin: 0;
+    padding: 14px;
+    color: #333;
+}
+
+.special-recipe-images {
+    width: 100%;
+    padding: 14px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.recipe-img {
+    text-align: center;
+}
+
+.recipe-img h3 {
+    color: rgb(141, 141, 141);
+    transition: 0.5s;
+}
+
+.recipe-img:hover h3 {
+    color: #333;
+}
+
+
+/* Counter */
+
+.counter {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background: #333;
+}
+
+.counter::after {
+    background-image: url("../img/bg_4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    width: 100%;
+    height: 30vh;
+}
+
+.counter-content {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    z-index: 98;
+    background: blue;
+}
+
+
+/* Daily Foods */
+
+.daily-foods {
+    width: 100%;
+    height: 125vh;
+}
+
+.daily-foods h1 {
+    color: #333;
+}
+
+.daily-title {
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.daily-title span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.daily-title h2 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.daily-foods-content {
+    width: 80%;
+    height: 125vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.breakfast-row {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.breakfast-option {
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    background: white;
+}
+
+.subtitle h3,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.food-title h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.lunch-row {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.dinner-row {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+
+/* Testemony */
+
+.testemony {
+    margin-top: 5vh;
+    position: relative;
+    background: #333;
+    width: 100%;
+    height: 85vh;
+}
+
+.testemony::after {
+    background-image: url("../img/bg_5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.swiper-container {
+    width: 70%;
+    height: 65vh;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    transform: translate(0%, 25%);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.swiper-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-slide-content h3 {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+}
+
+.swiper-slide-content h1 {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+}
+
+.swiper-slide-content p {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.border-slide {
+    width: 180px;
+    height: 4px;
+    background: #f1f1f1;
+    margin: 20px auto;
+}
+
+.testemony-text {
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    z-index: 97;
+}
+
+.testemony-text span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.testemony-text h2 {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+}
+
+
+/* Our Chefs */
+
+.our-chefs {
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 80vh;
+}
+
+.our-chefs-text {
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+}
+
+.our-chefs-text span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.our-chefs-text h2 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.chefs-container {
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.chef-photo {
+    width: calc(100%/4);
+    text-align: center;
+    display: inline-block;
+}
+
+.chef-photo h2,
+.chef-photo h3 {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.chef-photo h2 {
+    color: #333;
+}
+
+.chef-photo h3 {
+    color: rgb(141, 141, 141);
+    font-size: 15px;
+}
+
+.social-icons {
+    color: rgb(243, 45, 45);
+    font-size: 20px;
+    text-align: start;
+    margin-left: 30px;
+    letter-spacing: 6px;
+}
+
+.social-icons a {
+    color: rgb(243, 45, 45);
+}
+
+
+/* Extra Content */
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    background: #333;
+}
+
+.banner-container::after {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url(../img/bg_4.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.page-banner-content {
+    z-index: 96;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.page-banner-content img {
+    filter: invert(100%);
+}
+
+.page-banner-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.for-client-container {
+    margin-top: 5vh;
+    width: 100%;
+    height: 45vh;
+}
+
+.for-client-content {
+    width: 80%;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.for-client-text {
+    position: relative;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.for-client-text span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.for-client-text h1 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.for-client-text p {
+    color: rgb(141, 141, 141);
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.for-client-text button {
+    position: relative;
+    background: rgb(243, 45, 45);
+    outline: 0;
+    border: 2px solid rgb(243, 45, 45);
+    text-align: center;
+    color: white;
+    width: 200px;
+    padding: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 12px;
+}
+
+.for-client-text button:hover {
+    background: none;
+    border: 2px solid rgb(243, 45, 45);
+    color: rgb(243, 45, 45);
+}
+
+
+/* Gallery.html */
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.inner-width button {
+    position: relative;
+    background: rgb(243, 45, 45);
+    outline: 0;
+    border: 2px solid rgb(243, 45, 45);
+    text-align: center;
+    color: white;
+    width: 200px;
+    padding: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.inner-width button:hover {
+    background: none;
+    border: 2px solid rgb(243, 45, 45);
+    color: rgb(243, 45, 45);
+}
+
+.inner-width-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-width-text span {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 24px;
+    color: rgb(243, 45, 45);
+}
+
+.inner-width-text h1 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+}
+
+.gallery-images {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Contact Us */
+
+.contact-container {
+    background: #e7e7e7;
+    width: 100%;
+    height: 25vh;
+}
+
+.informations {
+    position: relative;
+    background: #e7e7e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content {
+    position: relative;
+    top: 2%;
+}
+
+.contact-content h2 {
+    color: #333;
+    padding: 36px;
+    margin: 0;
+}
+
+.box {
+    margin-left: 40px;
+    margin-right: 40px;
+    background: white;
+    width: 20%;
+    height: 20vh;
+    text-align: center;
+    padding: 14px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 80vh;
+    margin-top: 20vh;
+    background: #f1f1f1;
+}
+
+.form-content {
+    position: relative;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-content img {
+    position: relative;
+    left: 10%;
+}
+
+.form-contact {
+    padding: 40px;
+    float: right;
+    width: 55%;
+    position: relative;
+}
+
+.form-contact input[type="text"],
+.form-contact input[type="tel"],
+.form-contact input[type="email"] {
+    background: none;
+    outline: none;
+    margin: 20px;
+    display: block;
+    border: 1px solid gray;
+    padding: 14px;
+    width: 445px;
+    color: #333;
+    transition: 0.25s;
+}
+
+.form-contact input[type="text"]:focus,
+.form-contact input[type="tel"]:focus,
+.form-contact input[type="email"]:focus {
+    border: 1px solid black;
+}
+
+.form-contact textarea {
+    background: none;
+    outline: none;
+    margin: 20px;
+    display: block;
+    border: 1px solid gray;
+    padding: 14px;
+    color: #333;
+}
+
+.form-contact textarea:focus {
+    border: 1px solid black;
+}
+
+.form-contact input[type="submit"] {
+    background: rgb(243, 45, 45);
+    outline: 0;
+    border: 2px solid rgb(243, 45, 45);
+    text-align: center;
+    width: 200px;
+    color: white;
+    padding: 14px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.form-contact input[type="submit"]:hover {
+    background: none;
+    border: 2px solid rgb(243, 45, 45);
+    color: rgb(243, 45, 45);
+}
